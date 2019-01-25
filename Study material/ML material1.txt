@@ -1,0 +1,99 @@
+Machine Learning in simple words
+Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that machines should be able to learn and adapt through experience.
+
+Types of Machine Learning
+Supervised Learning
+When there is pre-defined dataset to train your program
+Based on its training data the program can make accurate decisions when given new data
+So it is like learning with the teacher
+It is like Classification and regression
+For example, you receive bunch of flowers with labels and your program can indention the flowers on basis of the labeling
+ml32
+
+Unsupervised Learning
+When there is no teacher to train
+When your program is smart enough to automatically find patterns and relationships in the database which is without labeling.
+In this learning, you didn’t use any past/prior knowledge about people and classified them “on-the-go”
+It is like clustering and association
+For example, you receive flowers without labeling so the program needs the algorithm to identify the flowers
+ml33
+
+Reinforcement learning
+It is just like hit and trial kind of learning
+The program learns from their own experience.
+A software program that performs a defined task optimally and learns by trial and error through the experience.
+
+******************************************************************************************************************************************************
+
+Machine learning can refer to:
+
+the branch of artificial intelligence;
+the methods used in this field (there are a variety of different approaches).
+Overall, if talking about the latter, Tom Mitchell, author of the well-known book “Machine learning”, defines ML as “improving performance in some task with experience”. However, this definition is quite a broad one, so we can quote another more specific description stating that ML deals with systems that can learn from data.
+
+ML works with data and processes it to discover patterns that can be later used to analyse new data. ML usually relies on specific representation of data, a set of “features” that are understandable for a computer. For example, if we are talking about text it should be represented through the words it contains or some other characteristics such as length of the text, number of emotional words etc. This presentation depends on the task you are dealing with and is typically referred to as “feature extraction”.
+
+ Types of ML
+
+All ML tasks can be classified in several categories, the main ones are:
+
+supervised ML;
+unsupervised ML;
+reinforcement learning.
+Now let us explain in simple words the kind of problems that are dealt with by each category. Supervised ML relies on data where the true label/class was indicated. This is easier to explain using an example. Let us imagine that we want to teach a computer to distinguish pictures of cats and dogs. We can ask some of our friends to send us pictures of cats and dogs adding a tag ‘cat’ or ‘dog’. Labelling is usually done by human annotators to ensure a high quality of data. So now we know the true labels of the pictures and can use this data to “supervise” our algorithm in learning the right way to classify images. Once our algorithm learns how to classify images we can use it on new data and predict labels (‘cat’ or ‘dog’ in our case) on previously unseen images.
+
+
+
+As the reader can guess from the name, unsupervised ML means that we deprive a learning algorithm of the labels we used in supervised learning. We just provide ML with a large amount of data and characteristic of each observation (single piece of data). As an example, imagine your friends were not very helpful and forgot to label the images of cats and dogs that they have sent. However, you still want to split this data into 2 categories. You can employ unsupervised ML (in this case a technique called clustering) to separate your images in two groups based on some inherent features(characteristics) of the pictures.
+
+A graph below presents a simplified workflow of a typical ML task (it is a general graph that shows the processing both in terms of supervised and unsupervised ML).
+
+ML-eng
+
+Typical Machine Learning workflow
+
+Another well-known class of ML problems is called reinforcement learning. This class of ML problems can be easily illustrated by an example of learning to play chess. As input to this problem ML receives information about whether a game played was won or lost. So ML does not have every move in the game labelled as successful or not, but only has the result of the whole game. Therefore ML algorithm can play a lot of games and each time gives bigger “weights” to those moves that resulted in a winning combination.
+
+******************************************************************************************************************************************************
+
+we are trying to teach to machines. We are trying to teach machines to “Learn from Experience
+
+Supervised Learning:
+Finds patterns (and develops predictive models) using both, input data and output data.
+
+All Supervised Learning techniques area form of either Classification or Regression.
+
+Classification:
+Classification is used for predicting discrete responses.
+For example:
+Whether India will WIN or LOSE a Cricket match?Whether an email is SPAM or GENUINE?
+WIN, LOSE, SPAM, GENUINE are the predefined classes. And output has to fall among these depending on the input.
+Regression:
+Regression is used for predicting continuous responses.
+For example:
+Trend in stock market prices, Weather forecast, etc.
+Unsupervised Learning:
+Finds patterns based only on input data. This technique is useful when you’re not quite sure what to look for. Often used for exploratory Analysis of raw data.
+
+Most Unsupervised Learning techniques are a form of Cluster Analysis.
+
+Cluster Analysis:
+In Cluster Analysis, you group data items that have some measure of similarity based on characteristic values.
+At the end what you will have is a set of different groups (Let’s assume A — Z such groups). A Data Item(d1) in one group(A) is very much similar to other Data Items(d2 — dx) in the same group(A), but d1 is significantly different from Data Items belonging to different groups (B — Z).
+Back to our example…
+
+Our quiz was an example of Supervised Learning — Regression technique.
+
+Some common applications of Machine Learning that you can relate to:
+Your personal Assistant Siri or Google uses ML.
+Weather predictions for the next week comes using ML.
+Win Predictor in a sports tournament uses ML.
+Medical Diagnosis dominantly uses ML.
+And something you would be familiar with, ever wondered how come media sites shows you recommendations and ads matching closely to your interests? They as well use Machine Learning.
+
+************************************************************************************************************************************************
+
+Machine learning models and methods for text classification can be divided in two categories
+
+1. the ones that use word ordering (sequence of words) information to understand the sematic meaning. There are called sequence models. This category of models include convolutional neural networks (CNNs), recurrent neural networks (RNNs), and their variations. As in this case we are interested about the meaning of the words/phrases then these methods use word embeddings Word2vec for the encoding.
+2. and the ones that treat text as “bag of words” . These are also called n-gram models and use tecniques like logistic regression,support vector machines, simple multi- layer perceptrons (MLPs, or fully-connected neural networks). The encoding of the words in this case could be TF-IDF or simply word count.
