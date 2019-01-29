@@ -25,4 +25,10 @@ https://medium.com/datadriveninvestor/understanding-naive-bayes-and-its-applicat
 
 https://sebastianraschka.com/Articles/2014_naive_bayes_1.html
 
+https://dzone.com/articles/naive-bayes-tutorial-naive-bayes-classifier-in-pyt
+
+https://monkeylearn.com/blog/practical-explanation-naive-bayes-classifier/
+
+https://www.saedsayad.com/naive_bayesian.htm
+
 https://www.researchgate.net/publication/228084521_Text_Classification_Using_Machine_Learning_Techniques
